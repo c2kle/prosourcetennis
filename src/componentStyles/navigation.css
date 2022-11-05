@@ -1,0 +1,27 @@
+.navigation-bar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+    width: 100vw;
+    height: 50px;
+    opacity: .5;
+    background-color: black;
+}
+
+.navigation-bar_ul {
+    
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+
+}
+
+.navigation-bar_ul_li {
+    color: whitesmoke;
+    margin: 10px;
+}

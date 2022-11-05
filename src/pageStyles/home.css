@@ -1,0 +1,44 @@
+.home{
+    position: absolute;
+    clip: rect(0,auto,auto,0);
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    background-image: url(../../public/court-in.png);
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.home_body {
+    
+}
+
+.home_header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+    font-family: "TT Lakes Neue Extended";
+    font-size: medium;
+    font-weight: medium;
+}
+
+.home_logo-p {
+    font-family: 'TT Lakes Neue Extended';
+    font-size: 5em;
+    margin: 10px;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        background-image: url(../../public/court-text-tablet.png);
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        background-image: url(../../public/court-text-mobile.png);
+    }
+}
