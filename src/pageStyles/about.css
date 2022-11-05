@@ -6,7 +6,8 @@
     scroll-snap-align: start; */
     position : relative;
     height : 100vh;
-    background-image: url(../../public/court-text.png);
+    /* background-image: url(../../public/clay-test.jpg); */
+    background-color: transparent;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;

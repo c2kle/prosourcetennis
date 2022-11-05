@@ -3,6 +3,6 @@ import '../pageStyles/team.css'
 
 export default function Team() {
   return (
-    <div className="team">Team</div>
+    <div id="team" className="team">Team</div>
   )
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Team from '../pages/Team'
-import ParallaxFixed from '../pages/ParallaxFixed'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
 

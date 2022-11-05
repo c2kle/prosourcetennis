@@ -9,7 +9,7 @@
     z-index: 1; */
     position : relative;
     height : 100vh;
-    background-image: url(../../public/court-in.png);
+    background-image: url(../../public/court.png);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -46,6 +46,6 @@
 
 @media (max-width: 500px) {
     .home {
-        background-image: url(../../public/court-text-mobile.png);
+        background-image: url(../../public/court.png);
     }
 }

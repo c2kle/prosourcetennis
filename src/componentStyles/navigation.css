@@ -1,21 +1,22 @@
 .navigation-bar {
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
     width: 100vw;
     height: 50px;
-    opacity: .5;
+    opacity: 1;
     background-color: black;
 }
 
 .navigation-bar_ul {
     
     display: flex;
+    height: 100%;
     list-style: none;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     
 
 
@@ -24,4 +25,13 @@
 .navigation-bar_ul_li {
     color: whitesmoke;
     margin: 10px;
+    font-family: "TT Lakes Neue Extended";
+    font-size: small;
+}
+
+.logo {
+    color: whitesmoke;
+    margin: 10px;
+    font-family: "TT Lakes Neue Extended";
+    font-size: medium;
 }
