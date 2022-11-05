@@ -5,9 +5,8 @@
     align-items: center;
     z-index: 10;
     width: 100vw;
-    height: 50px;
-    opacity: 1;
-    background-color: black;
+    height: 52px;
+    background-color: rgba(0,0,0,1);
 }
 
 .navigation-bar_ul {
@@ -17,7 +16,6 @@
     list-style: none;
     justify-content: center;
     align-items: flex-end;
-    
 
 
 }
@@ -27,11 +25,22 @@
     margin: 10px;
     font-family: "TT Lakes Neue Extended";
     font-size: small;
+    user-select: none;
+
 }
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: small;
+
+}
+
 
 .logo {
     color: whitesmoke;
-    margin: 10px;
+    margin: 10px 10px 10px 15px;
     font-family: "TT Lakes Neue Extended";
     font-size: medium;
+    user-select: none;
 }

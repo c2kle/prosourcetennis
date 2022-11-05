@@ -11,10 +11,11 @@ export default function navigation() {
             <li className="navigation-bar_ul_li" ><a href="#home">Home</a></li>
             <li className="navigation-bar_ul_li" ><a href="#about">About</a></li>
             <li className="navigation-bar_ul_li" ><a href="#team">Team</a></li>
-            <li className="navigation-bar_ul_li">Services</li>
-            <li className="navigation-bar_ul_li">Store</li>
-            <li className="navigation-bar_ul_li">Contact</li>
-            <li className="navigation-bar_ul_li"></li>
+            <li className="navigation-bar_ul_li"><a href="#team">Services</a></li>
+            <li className="navigation-bar_ul_li"><a href="#team">Store</a></li>
+            <li className="navigation-bar_ul_li"><a href="#team">Contact</a></li>
+            <li className="navigation-bar_ul_li">|</li>
+            <li className="navigation-bar_ul_li"><a href="#team">Members</a></li>
         </ul>
     </div>
   )
