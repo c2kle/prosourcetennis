@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from '../pages/Home'
-import Over from '../pages/Over'
+import About from '../pages/About'
+import Team from '../pages/Team'
+import ParallaxFixed from '../pages/ParallaxFixed'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
 
@@ -9,7 +11,8 @@ export default function main() {
     <div className="main">
         <Navigation/>
         <Home/>
-        <Over/>
+        <About/>
+        <Team/>
     </div>
 
   )

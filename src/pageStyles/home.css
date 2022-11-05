@@ -1,12 +1,19 @@
 .home{
-    position: absolute;
+    /* position: absolute;
     clip: rect(0,auto,auto,0);
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 10vh 80vh 10vh;
     background-image: url(../../public/court-in.png);
     background-size: cover;
-    z-index: 1;
+    z-index: 1; */
+    position : relative;
+    height : 100vh;
+    background-image: url(../../public/court-in.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    scroll-snap-align: start;
 
 }
 

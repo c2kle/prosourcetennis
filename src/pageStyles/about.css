@@ -1,7 +1,14 @@
 .about {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 10vh 80vh 10vh;
     background-color: whitesmoke;
+    scroll-snap-align: start; */
+    position : relative;
+    height : 100vh;
+    background-image: url(../../public/court-text.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     scroll-snap-align: start;
 }
