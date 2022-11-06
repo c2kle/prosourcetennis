@@ -6,7 +6,7 @@ export default function navigation() {
 
   return (
     <div className="navigation-bar">
-      <p className="logo">PRO SOURCE TENNIS</p>
+      <p className="navigation-bar_logo">PRO SOURCE TENNIS</p>
         <ul className="navigation-bar_ul">
             <li className="navigation-bar_ul_li" ><a href="#home">Home</a></li>
             <li className="navigation-bar_ul_li" ><a href="#about">About</a></li>

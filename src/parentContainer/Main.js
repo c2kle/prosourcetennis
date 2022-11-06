@@ -3,6 +3,9 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Team from '../pages/Team'
 import Services from '../pages/Services'
+import Store from '../pages/Store'
+import Contact from '../pages/Contact'
+import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
 
@@ -18,6 +21,9 @@ export default function main() {
         <About />
         <Team />
         <Services />
+        <Store />
+        <Contact />
+        <Members />
       </div>
     </div>
 

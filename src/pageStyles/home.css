@@ -1,21 +1,8 @@
-.home{
-    /* position: absolute;
-    clip: rect(0,auto,auto,0);
-    display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
-    background-image: url(../../public/court-in.png);
-    background-size: cover;
-    z-index: 1; */
-    /* position : relative; */
-    height : 100%;
+.home {
+    height: 100%;
     width: 100%;
     flex-shrink: 0;
-    /* background-image: url(../../public/grass-court-main-optimized.jpg); */
     background-color: transparent;
-    /* background-attachment: fixed;
-    background-position: center center;
-    background-size: cover; */
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -30,47 +17,41 @@
 
 }
 
-
 .home::-webkit-scrollbar {
     display: none;
 }
 
-.home_section {
+.home_wrapper {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+}
+
+.home_wrapper_section {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
     font-family: 'Be Vietnam Pro';
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 85%;
     clip-path: circle();
-    scroll-snap-align: start;
+
 
 }
 
-.home_section_h1 {
+.home_wrapper_section_h1 {
     font-size: 40px;
     color: whitesmoke;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     user-select: none;
-}
-
-
-.home_header {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: flex-end;
-    color: whitesmoke;
-    font-family: "TT Lakes Neue Extended";
-    font-size: medium;
-    font-weight: medium;
-}
-
-.home_logo-p {
-    font-family: 'TT Lakes Neue Extended';
-    font-size: 5em;
-    margin: 10px;
+    text-align: center;
 }

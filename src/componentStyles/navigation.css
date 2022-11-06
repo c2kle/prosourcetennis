@@ -37,10 +37,16 @@ a {
 }
 
 
-.logo {
+.navigation-bar_logo {
     color: whitesmoke;
     margin: 10px 10px 10px 15px;
     font-family: "TT Lakes Neue Extended";
     font-size: medium;
     user-select: none;
+}
+
+@media (max-width: 780px) {
+    .navigation-bar_ul {
+        display: none;
+    }
 }
