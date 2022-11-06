@@ -7,7 +7,7 @@ export default function Landing(props) {
   let landingVideoSource = 'landingVideoWhole.mp4'
 
   if (window.screen.availWidth < 700) {
-    landingVideoSource = 'landingVideo.mp4'
+    landingVideoSource = 'smallLanding.mp4'
   }
 
 
