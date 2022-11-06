@@ -5,8 +5,13 @@
     background-color: whitesmoke;
     scroll-snap-align: start; */
     position : relative;
-    height : 100vh;
-    /* background-image: url(../../public/clay-test.jpg); */
+    height : 100%;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../../public/grass-court-main-optimized.jpg); */
     background-color: transparent;
     background-attachment: fixed;
     background-position: center center;

@@ -1,16 +1,33 @@
 .main {
-    height: 100vh;
-    width: 100vw;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    scroll-padding: 50px;
-    scroll-snap-type: y proximity;
+    display: grid;
+    grid-template-rows: 52px calc(100vh - 52px);
+    grid-template-columns: 100vw;
+
 
 }
 
-.main::-webkit-scrollbar {
+.main_header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.main_body {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 1/2 ;
+    background-image: url(../../public/grass-court-main-optimized.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x:auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.main_body::-webkit-scrollbar {
     display: none;
 }
 

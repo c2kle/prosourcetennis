@@ -11,3 +11,10 @@
 		url("./fonts/TTLakesNeueExt-Medium.ttf");
 		font-weight: 200;
 }
+
+@font-face {
+	font-family: "Be Vietnam Pro";
+	src: 
+		url("./fonts/BeVietnamPro-ExtraLight.ttf");
+		font-weight: 200;
+}

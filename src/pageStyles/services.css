@@ -1,7 +1,27 @@
 .services {
-    display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
-    background-color: whitesmoke;
+    position : relative;
+    height : 100%;
+    width:100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../../public/grass-court-medium.jpg); */
+    background-color: transparent;
+    /* background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
     scroll-snap-align: start;
+}
+
+.services_section {
+    height: 400px;
+    width: 400px;
+    background-image: url("../../public/strong.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 15px;
+    margin: 20px;
+    clip-path: circle();
 }

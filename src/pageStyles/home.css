@@ -7,19 +7,42 @@
     background-image: url(../../public/court-in.png);
     background-size: cover;
     z-index: 1; */
-    position : relative;
+    /* position : relative; */
     height : 100vh;
-    background-image: url(../../public/court.png);
-    background-attachment: fixed;
+    width: 100vw;
+    flex-shrink: 0;
+    /* background-image: url(../../public/grass-court-main-optimized.jpg); */
+    background-color: transparent;
+    /* background-attachment: fixed;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.home_body {
-    
+.home_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    font-family: 'Be Vietnam Pro';
+    height: 80%;
+    width: 80%;
+    clip-path: circle();
 }
+
+.home_section_h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0);
+    user-select: none;
+}
+
 
 .home_header {
     grid-column: 1/4;
@@ -36,16 +59,4 @@
     font-family: 'TT Lakes Neue Extended';
     font-size: 5em;
     margin: 10px;
-}
-
-@media (max-width: 1000px) {
-    .home {
-        background-image: url(../../public/court-text-tablet.png);
-    }
-}
-
-@media (max-width: 500px) {
-    .home {
-        background-image: url(../../public/court.png);
-    }
 }
