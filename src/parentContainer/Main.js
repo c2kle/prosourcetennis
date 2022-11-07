@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Team from '../pages/Team'
@@ -9,14 +10,23 @@ import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
 
-export default function main() {
+export default function Main() {
+
+  const [innerHeight,setInnerHeight] = useState(window.innerHeight)
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
+
+  window.addEventListener('resize', () => {
+    setInnerHeight(window.innerHeight)
+    setInnerWidth(window.innerWidth)
+  })
+
   return (
 
     <div className="main">
       <div className="main_header">
         <Navigation />
       </div>
-      <div className="main_body">
+      <div style={{height:  `${innerHeight - 52}px`, width:  `${innerWidth}px` }} className="main_body">
         <Home />
         <About />
         <Team />

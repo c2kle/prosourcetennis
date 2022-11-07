@@ -1,27 +1,57 @@
 .services {
-    position : relative;
-    height : 100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url(../../public/grass-court-medium.jpg); */
     background-color: transparent;
-    /* background-attachment: fixed;
-    background-position: center;
-    background-size: cover; */
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y proximity;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
 }
 
-.services_section {
-    height: 400px;
-    width: 400px;
-    background-image: url("../../public/strong.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0,0,0,.5);
-    border-radius: 15px;
-    margin: 20px;
+.services::-webkit-scrollbar {
+    display: none;
+}
+
+.services_wrapper {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+}
+
+.services_wrapper_section {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: 'Be Vietnam Pro';
+    height: 85%;
+    width: 85%;
     clip-path: circle();
+
+
+}
+
+.services_wrapper_section_h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    text-align: center;
 }

@@ -5,6 +5,10 @@
   
 }
 
+body {
+	background-color: black;
+}
+
 @font-face {
 	font-family: "TT Lakes Neue Extended";
 	src: 
