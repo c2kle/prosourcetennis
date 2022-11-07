@@ -16,6 +16,7 @@ export default function navigation() {
             <li className="navigation-bar_ul_li"><a href="#contact">Contact</a></li>
             <li className="navigation-bar_ul_li">|</li>
             <li className="navigation-bar_ul_li"><a href="#members">Members</a></li>
+            {/* <button className="navigation-bar_burger" type="button"></button> */}
         </ul>
     </div>
   )

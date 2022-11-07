@@ -18,15 +18,9 @@ export default function Main() {
 
   const debouncedVersion = useDebouncedCallback(() => {
     setInnerHeight(window.innerHeight)
-    console.log('yessir')
   },20)
 
   window.addEventListener('resize', debouncedVersion)
-
-  // window.addEventListener('resize', () => {
-  //   setInnerHeight(window.innerHeight)
-  //   console.log('yessir')
-  // })
 
 
 

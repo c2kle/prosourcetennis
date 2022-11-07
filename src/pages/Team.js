@@ -9,6 +9,16 @@ export default function Team() {
           <h1 className="team_wrapper_section_h1">TEAM</h1>
         </div>
       </div>
+      <div className="team_wrapper">
+        <div className="team_wrapper_section">
+          <h1 className="team_wrapper_section_h1">TEAM</h1>
+        </div>
+      </div>
+      <div className="team_wrapper">
+        <div className="team_wrapper_section">
+          <h1 className="team_wrapper_section_h1">TEAM</h1>
+        </div>
+      </div>
     </div>
   )
 }
