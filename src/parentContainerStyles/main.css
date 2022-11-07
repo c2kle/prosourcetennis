@@ -24,6 +24,7 @@
     scroll-snap-type: x proximity;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    width: 100%;
 
 }
 

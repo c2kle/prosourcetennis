@@ -9,18 +9,27 @@ import Contact from '../pages/Contact'
 import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
+import {useDebouncedCallback} from 'use-debounce'
 
 export default function Main() {
 
+  //innerWidth bug, can use outerWidth since browser toolbars are vertical
   const [innerHeight,setInnerHeight] = useState(window.innerHeight)
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
 
-  window.addEventListener('resize', () => {
+  const debouncedVersion = useDebouncedCallback(() => {
     setInnerHeight(window.innerHeight)
-    setInnerWidth(window.innerWidth)
-  })
+    console.log('yessir')
+  },20)
 
-  console.log(innerWidth,innerHeight)
+  window.addEventListener('resize', debouncedVersion)
+
+  // window.addEventListener('resize', () => {
+  //   setInnerHeight(window.innerHeight)
+  //   console.log('yessir')
+  // })
+
+
+
 
   return (
 
@@ -28,7 +37,7 @@ export default function Main() {
       <div className="main_header">
         <Navigation />
       </div>
-      <div style={{height:  `${innerHeight - 52}px`, width:  `${innerWidth}px` }} className="main_body">
+      <div style={{height:  `${innerHeight - 52}px`}} className="main_body">
         <Home />
         <About />
         <Team />
