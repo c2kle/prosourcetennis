@@ -20,6 +20,8 @@ export default function Main() {
     setInnerWidth(window.innerWidth)
   })
 
+  console.log(innerWidth,innerHeight)
+
   return (
 
     <div className="main">
