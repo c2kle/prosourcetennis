@@ -28,7 +28,6 @@ export default function Main() {
 
   window.addEventListener('orientationchange', debouncedVersion)
 
-  window.addEventListener('scroll', debouncedVersion)
 
 
 
