@@ -13,7 +13,7 @@ export default function Questionnaire() {
 
   const onNextHandler = () => {
     setNumber(number + 1)
-
+    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView()
    
 
   
@@ -21,6 +21,7 @@ export default function Questionnaire() {
 
   const onPreviousHandler = () => {
     setNumber(number - 1)
+    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView()
 
   
   }
@@ -60,9 +61,7 @@ export default function Questionnaire() {
     )
   }
 
-  useEffect(()=> {
-    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView()
-  })
+    
   return (
     <div className="questionnaire">
       {question}
