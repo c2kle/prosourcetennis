@@ -23,7 +23,7 @@
 .navigation-bar_ul_li {
     color: whitesmoke;
     margin: 10px;
-    font-family: "TT Lakes Neue Extended";
+    font-family: "Be Vietnam Pro";
     font-size: small;
     user-select: none;
 
@@ -40,7 +40,8 @@ a {
 .navigation-bar_logo {
     color: whitesmoke;
     margin: 10px 10px 10px 15px;
-    font-family: "TT Lakes Neue Extended";
+    font-family: "Be Vietnam Pro";
+    font-weight: 600;
     font-size: medium;
     user-select: none;
 }
