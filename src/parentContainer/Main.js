@@ -16,17 +16,21 @@ export default function Main() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   const [innerHeight,setInnerHeight] = useState(window.innerHeight)
 
-  const debouncedVersion = useDebouncedCallback(() => {
-    setInnerHeight(window.innerHeight)
-  },20)
-
-  window.addEventListener('resize', debouncedVersion)
-
-  // window.addEventListener('resize', () => {
+  // const debouncedVersion = useDebouncedCallback(() => {
   //   setInnerHeight(window.innerHeight)
-  // })
+  // },20)
 
-  window.addEventListener('orientationchange', debouncedVersion)
+  // window.addEventListener('resize', debouncedVersion)
+
+  window.addEventListener('resize', () => {
+    setInnerHeight(window.innerHeight)
+  })
+
+  window.addEventListener('orientationchange', () => {
+    setInnerHeight(window.innerHeight)
+  })
+
+  // window.addEventListener('orientationchange', debouncedVersion)
 
 
 
