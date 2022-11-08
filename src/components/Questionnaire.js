@@ -13,7 +13,7 @@ export default function Questionnaire() {
 
   const onNextHandler = () => {
     setNumber(number + 1)
-    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView("alignToTop")
+    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({block: "end"})
    
 
   
@@ -21,7 +21,7 @@ export default function Questionnaire() {
 
   const onPreviousHandler = () => {
     setNumber(number - 1)
-    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView("alignToTop")
+    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({block: "end"})
 
   
   }
