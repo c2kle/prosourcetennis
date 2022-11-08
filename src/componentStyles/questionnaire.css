@@ -19,9 +19,10 @@
 .questionnaire_question_title {
     text-align: center;
     font-family: "Be Vietnam Pro";
+    color: black;
     margin: 20px;
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 200;
 }
 
 .questionnaire_question_answers {
