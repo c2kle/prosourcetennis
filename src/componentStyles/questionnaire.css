@@ -17,6 +17,7 @@
 }
 
 .questionnaire_question_title {
+    text-align: center;
     font-family: "Be Vietnam Pro";
     margin: 20px;
     font-size: 64px;
@@ -49,11 +50,31 @@
     border-color: whitesmoke;
 }
 
+.questionnaire_question_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    background-color: transparent
+}
+
+.questionnaire_question_nav_button {
+    font-family: "Be Vietnam Pro";
+    font-size: 32px;
+    font-weight: 200;
+    background-color: transparent;
+    margin: 20px 10px 10px 10px;
+}
+
+
 @media (max-width: 760px) {
     .questionnaire {
         justify-content: flex-start;
     }
     .questionnaire_question_answers {
         flex-direction: column;
+    }
+    .questionnaire_question_nav {
+        width: 100vw;
     }
 }

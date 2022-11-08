@@ -1,31 +1,74 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
 import '../componentStyles/questionnaire.css'
 
 export default function Questionnaire() {
-    return (
-        <div className="questionnaire">
-            <div className="questionnaire_question">
-                <div className="questionnaire_question_title">I am:</div>
-                <div className="questionnaire_question_answers">
-                    <button className="questionnaire_question_answers_option">Player</button>
-                    <button className="questionnaire_question_answers_option">Parent</button>
-                    <button className="questionnaire_question_answers_option">Coach</button>
-                </div>
 
-            </div>
-            {/* <div className="questionnaire_question">
+
+
+  let question;
+
+  const [number, setNumber] = useState(1);
+
+
+  const onNextHandler = () => {
+    setNumber(number + 1)
+
+   
+
+  
+  }
+
+  const onPreviousHandler = () => {
+    setNumber(number - 1)
+
+  
+  }
+
+  if (number === 1) {
+    question = (
+      <div id="q1" className="questionnaire_question">
+        <div className="questionnaire_question_title">I am:</div>
+        <div className="questionnaire_question_answers">
+          <button className="questionnaire_question_answers_option">Player</button>
+          <button className="questionnaire_question_answers_option">Parent</button>
+          <button className="questionnaire_question_answers_option">Coach</button>
+        </div>
+        <div className="questionnaire_question_nav">
+        <button className="questionnaire_question_nav_button"></button>
+          <button className="questionnaire_question_nav_button" onClick={onNextHandler}>Next</button>
+        </div>
+      </div>
+    )
+  } else if (number === 2) {
+    question = (
+      <div id="q2" className="questionnaire_question">
         <div className="questionnaire_question_title">My goals are:</div>
         <div className="questionnaire_question_answers">
-        <button className="questionnaire_question_answers_option">Pro</button>
-        <button className="questionnaire_question_answers_option">D1</button>
-        <button className="questionnaire_question_answers_option">Collegiate</button>
-        <button className="questionnaire_question_answers_option">Scholarship</button>
-        <button className="questionnaire_question_answers_option">Ranking +</button>
-        <button className="questionnaire_question_answers_option">Game +</button>
+          <button className="questionnaire_question_answers_option">Pro</button>
+          <button className="questionnaire_question_answers_option">D1</button>
+          <button className="questionnaire_question_answers_option">Collegiate</button>
+          <button className="questionnaire_question_answers_option">Scholarship</button>
+          <button className="questionnaire_question_answers_option">Ranking +</button>
+          <button className="questionnaire_question_answers_option">Game +</button>
         </div>
+        <div className="questionnaire_question_nav">
+          <button className="questionnaire_question_nav_button" onClick={onPreviousHandler}>Previous</button>
+          <button className="questionnaire_question_nav_button">Next</button>
+        </div>
+      </div>
+    )
+  }
 
-       </div> */}
-            {/*<div className="quiestionnaire_question">
+  useEffect(()=> {
+    document.getElementsByClassName(`questionnaire_question`)[0].scrollIntoView()
+  })
+  return (
+    <div className="questionnaire">
+      {question}
+
+
+      {/*<div className="quiestionnaire_question">
         <div className="quiestionnaire_question_title">Weekly tennis commitment:</div>
         <div className="quiestionnaire_question_answers">
         <button className="quiestionnaire_question_answers_option">{"<"} 1 hr</button>
@@ -151,6 +194,6 @@ export default function Questionnaire() {
           <h1 className="home_wrapper_section_h1">ELITE TENNIS CONSULTING</h1>
         </div>
   </div> */}
-        </div>
-    )
+    </div>
+  )
 }

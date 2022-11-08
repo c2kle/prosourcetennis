@@ -26,10 +26,7 @@ export default function Main() {
   //   setInnerHeight(window.innerHeight)
   // })
 
-  window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.innerHeight)
-    console.log("called baby")
-  })
+  window.addEventListener('orientationchange', debouncedVersion)
 
 
 
