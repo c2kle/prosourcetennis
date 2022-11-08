@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+// import { useState } from 'react'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Team from '../pages/Team'
@@ -9,12 +9,12 @@ import Contact from '../pages/Contact'
 import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
-import {useDebouncedCallback} from 'use-debounce'
+// import {useDebouncedCallback} from 'use-debounce'
 
-export default function Main() {
+export default function Main(props) {
 
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
-  const [innerHeight,setInnerHeight] = useState(window.innerHeight)
+
 
   // const debouncedVersion = useDebouncedCallback(() => {
   //   setInnerHeight(window.innerHeight)
@@ -22,13 +22,6 @@ export default function Main() {
 
   // window.addEventListener('resize', debouncedVersion)
 
-  window.addEventListener('resize', () => {
-    setInnerHeight(window.innerHeight)
-  })
-
-  window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.innerHeight)
-  })
 
   // window.addEventListener('orientationchange', debouncedVersion)
 
@@ -42,7 +35,7 @@ export default function Main() {
       <div className="main_header">
         <Navigation />
       </div>
-      <div style={{height:  `${innerHeight - 52}px`}} className="main_body">
+      <div style={{height:  `${props.innerHeight - 52}px`}} className="main_body">
         <Home />
         <About />
         <Team />

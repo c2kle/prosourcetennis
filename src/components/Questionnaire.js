@@ -4,30 +4,22 @@ import '../componentStyles/questionnaire.css'
 
 export default function Questionnaire() {
 
-
-
-  let question;
-
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(0);
 
 
   const onNextHandler = () => {
     setNumber(number + 1)
-    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({block: "end"})
-   
-
-  
+    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({ block: "end" })
   }
 
   const onPreviousHandler = () => {
     setNumber(number - 1)
-    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({block: "end"})
-
-  
+    document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({ block: "end" })
   }
 
-  if (number === 1) {
-    question = (
+
+  let questionsCollection = [
+    (
       <div id="q1" className="questionnaire_question">
         <div className="questionnaire_question_title">I am:</div>
         <div className="questionnaire_question_answers">
@@ -36,13 +28,13 @@ export default function Questionnaire() {
           <button className="questionnaire_question_answers_option">Coach</button>
         </div>
         <div className="questionnaire_question_nav">
-        <button className="questionnaire_question_nav_button"></button>
+          <button className="questionnaire_question_nav_button"></button>
           <button className="questionnaire_question_nav_button" onClick={onNextHandler}>Next</button>
         </div>
       </div>
     )
-  } else if (number === 2) {
-    question = (
+    ,
+    (
       <div id="q2" className="questionnaire_question">
         <div className="questionnaire_question_title">My goals are:</div>
         <div className="questionnaire_question_answers">
@@ -59,15 +51,15 @@ export default function Questionnaire() {
         </div>
       </div>
     )
-  }
 
-    
-  return (
-    <div className="questionnaire">
-      {question}
+  ]
+
+    return (
+      <div className="questionnaire">
+        {questionsCollection[number]}
 
 
-      {/*<div className="quiestionnaire_question">
+        {/*<div className="quiestionnaire_question">
         <div className="quiestionnaire_question_title">Weekly tennis commitment:</div>
         <div className="quiestionnaire_question_answers">
         <button className="quiestionnaire_question_answers_option">{"<"} 1 hr</button>
@@ -193,6 +185,6 @@ export default function Questionnaire() {
           <h1 className="home_wrapper_section_h1">ELITE TENNIS CONSULTING</h1>
         </div>
   </div> */}
-    </div>
-  )
-}
+      </div>
+    )
+  }

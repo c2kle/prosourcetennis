@@ -28,7 +28,9 @@
 .questionnaire_question_answers {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
