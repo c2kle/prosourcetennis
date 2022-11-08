@@ -47,6 +47,22 @@ export default function Questionnaire() {
         </div>
         <div className="questionnaire_question_nav">
           <button className="questionnaire_question_nav_button" onClick={onPreviousHandler}>Previous</button>
+          <button className="questionnaire_question_nav_button" onClick={onNextHandler}>Next</button>
+        </div>
+      </div>
+    ),
+    (
+      <div className="questionnaire_question">
+        <div className="questionnaire_question_title">Rankings:</div>
+        <div className="questionnaire_question_answers">
+          <input className="questionnaire_question_answers_option" placeholder="UTR"></input>
+          <input className="questionnaire_question_answers_option" placeholder={"TR (stars)"}></input>
+          <input className="questionnaire_question_answers_option" placeholder="ATP"></input>
+          <input className="questionnaire_question_answers_option" placeholder="ITF"></input>
+          <input className="questionnaire_question_answers_option" placeholder="USTA Nat."></input>
+        </div>
+        <div className="questionnaire_question_nav">
+          <button className="questionnaire_question_nav_button" onClick={onPreviousHandler}>Previous</button>
           <button className="questionnaire_question_nav_button">Next</button>
         </div>
       </div>
@@ -54,12 +70,12 @@ export default function Questionnaire() {
 
   ]
 
-    return (
-      <div className="questionnaire">
-        {questionsCollection[number]}
+  return (
+    <div className="questionnaire">
+      {questionsCollection[number]}
 
 
-        {/*<div className="quiestionnaire_question">
+      {/*<div className="quiestionnaire_question">
         <div className="quiestionnaire_question_title">Weekly tennis commitment:</div>
         <div className="quiestionnaire_question_answers">
         <button className="quiestionnaire_question_answers_option">{"<"} 1 hr</button>
@@ -185,6 +201,6 @@ export default function Questionnaire() {
           <h1 className="home_wrapper_section_h1">ELITE TENNIS CONSULTING</h1>
         </div>
   </div> */}
-      </div>
-    )
-  }
+    </div>
+  )
+}
