@@ -25,7 +25,8 @@
     color: whitesmoke;
     background-color: transparent;
     font-family: "Be Vietnam Pro";
-    height: 80px;
+    font-size: 18px;
+    margin: 30px;
     animation: fadeIn 3s;
     animation-fill-mode: forwards;
 }
