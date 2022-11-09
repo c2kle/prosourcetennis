@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useState } from 'react'
+import { useState } from 'react'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Team from '../pages/Team'
@@ -9,9 +9,12 @@ import Contact from '../pages/Contact'
 import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
+import NavigationMenu from '../components/NavigationMenu'
 
 
 export default function Main(props) {
+
+  const [menu,setMenu] = useState("false")
 
   return (
 
@@ -27,6 +30,7 @@ export default function Main(props) {
         <Store />
         <Contact />
         <Members />
+        {/* <NavigationMenu /> */}
       </div>
     </div>
 

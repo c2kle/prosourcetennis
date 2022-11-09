@@ -4,14 +4,6 @@ import '../pageStyles/landing.css'
 
 export default function Landing(props) {
 
-  let landingVideoSource = 'landingVideoWhole.mp4'
-
-  if (window.screen.availWidth < 700) {
-    landingVideoSource = 'smallLanding.mp4'
-  }
-
-
-
   const onClickHandler = () => {
 
     props.setLanded(true)
@@ -20,12 +12,11 @@ export default function Landing(props) {
 
 
   return (
-    <div className="landing">
-      <div className="landing_body" onClick={onClickHandler}>
-        <video className="landing_video" autoPlay muted>
-          <source src={landingVideoSource} type="video/mp4"></source>
-        </video>
+    <div style={{height: props.innerHeight}} className="landing">
+      <div className="landing_body" >
+        PRO SOURCE TENNIS 
       </div>
+      <button className="landing_button" onClick={onClickHandler}>ENTER</button>
     </div>
   )
 }

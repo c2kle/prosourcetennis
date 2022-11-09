@@ -1,6 +1,6 @@
 .landing {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -12,16 +12,20 @@
 .landing_body{
     display: flex;
     flex-direction: column;
-
+    font-family: "Be Vietnam Pro";
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
+    font-size: 28px;
+    text-align: center;
+
 }
 
 .landing_button {
     color: whitesmoke;
     background-color: transparent;
-    font-family: "TT Lakes Neue Extended";
-
+    font-family: "Be Vietnam Pro";
+    height: 80px;
     animation: fadeIn 3s;
     animation-fill-mode: forwards;
 }
