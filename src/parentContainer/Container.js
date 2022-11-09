@@ -3,7 +3,7 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 // import Landing from '../pages/Landing';
 import { useState } from 'react';
-import { useDebouncedCallback } from 'use-debounce'
+// import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
 
@@ -18,29 +18,32 @@ export default function Container() {
   // }
 
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
 
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
 
 
-  const debouncedVersion = useDebouncedCallback(() => {
-    setInnerHeight(window.innerHeight)
-  }, 20)
+  // const debouncedVersion = useDebouncedCallback(() => {
+  //   setInnerHeight(window.innerHeight)
+  // }, 20)
 
-  window.addEventListener('resize', debouncedVersion)
+  // window.addEventListener('resize', debouncedVersion)
 
 
   // window.addEventListener('orientationchange', debouncedVersion)
 
-  // window.addEventListener('resize', () => {
-  //   setInnerHeight(window.innerHeight)
-  // })
+  window.addEventListener('resize', () => {
+    setInnerHeight(window.innerHeight)
+    setInnerHeight(window.innerWidth)
+  })
 
   window.addEventListener('orientationchange', () => {
     setInnerHeight(window.innerHeight)
+    setInnerWidth(window.innerWidth)
   })
 
   return (
     // <div className="container">{bodyContent}</div>
-    <div className="container" style={{ height: innerHeight }}><Main innerHeight={innerHeight} /></div>
+    <div className="container" style={{ height: innerHeight, width: innerWidth }}><Main innerHeight={innerHeight} /></div>
   )
 }
