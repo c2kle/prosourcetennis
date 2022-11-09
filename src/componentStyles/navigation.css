@@ -24,7 +24,7 @@
     color: whitesmoke;
     margin: 10px;
     font-family: "Be Vietnam Pro";
-    font-size: small;
+    font-size: 12px;
     user-select: none;
 
 }
@@ -42,12 +42,27 @@ a {
     margin: 10px 10px 10px 15px;
     font-family: "Be Vietnam Pro";
     font-weight: 600;
-    font-size: medium;
+    font-size: 18px;
     user-select: none;
+}
+
+.navigation-bar_burger {
+    display: none;
+    text-align: center;
+    font-size: 0px;
+    margin: 15px;
+    background-color: black;
+}
+
+.navigation-bar_menu-bar {
+    fill: whitesmoke;
 }
 
 @media (max-width: 780px) {
     .navigation-bar_ul{
         display: none;
+    }
+    .navigation-bar_burger {
+        display: block;
     }
 }

@@ -9,25 +9,9 @@ import Contact from '../pages/Contact'
 import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
 import Navigation from '../components/Navigation'
-// import {useDebouncedCallback} from 'use-debounce'
+
 
 export default function Main(props) {
-
-  //innerWidth bug, can use outerWidth since browser toolbars are vertical
-
-
-  // const debouncedVersion = useDebouncedCallback(() => {
-  //   setInnerHeight(window.innerHeight)
-  // },20)
-
-  // window.addEventListener('resize', debouncedVersion)
-
-
-  // window.addEventListener('orientationchange', debouncedVersion)
-
-
-
-
 
   return (
 

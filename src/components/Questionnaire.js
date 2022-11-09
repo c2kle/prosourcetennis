@@ -6,6 +6,14 @@ export default function Questionnaire() {
 
   const [number, setNumber] = useState(0);
 
+  const onSelectedHandler = (e) => {
+    if (e.target.getAttribute("data-selected") === "true") {
+      e.target.setAttribute("data-selected","false")
+    } else {
+      e.target.setAttribute("data-selected","true")
+    }
+  }
+
 
   const onNextHandler = () => {
     setNumber(number + 1)
@@ -17,15 +25,24 @@ export default function Questionnaire() {
     document.getElementsByClassName(`questionnaire_question_title`)[0].scrollIntoView({ block: "end" })
   }
 
+  const answersCollectionInitalState = {
+    q1: "",
+    q2: [],
+    q3: [],
+  }
+
+  const [{q1, q2, q3,}, setAnswersCollection] = useState(answersCollectionInitalState);
+
+
 
   let questionsCollection = [
     (
       <div id="q1" className="questionnaire_question">
         <div className="questionnaire_question_title">I am:</div>
         <div className="questionnaire_question_answers">
-          <button className="questionnaire_question_answers_option">Player</button>
-          <button className="questionnaire_question_answers_option">Parent</button>
-          <button className="questionnaire_question_answers_option">Coach</button>
+          <button name="q1-1" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler} value="Player">Player</button>
+          <button name="q1-2" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler} value="Parent">Parent</button>
+          <button name="q1-3" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler} calue="Coach">Coach</button>
         </div>
         <div className="questionnaire_question_nav">
           <button className="questionnaire_question_nav_button"></button>
@@ -38,12 +55,12 @@ export default function Questionnaire() {
       <div id="q2" className="questionnaire_question">
         <div className="questionnaire_question_title">My goals are:</div>
         <div className="questionnaire_question_answers">
-          <button className="questionnaire_question_answers_option">Pro</button>
-          <button className="questionnaire_question_answers_option">D1</button>
-          <button className="questionnaire_question_answers_option">Collegiate</button>
-          <button className="questionnaire_question_answers_option">Scholarship</button>
-          <button className="questionnaire_question_answers_option">Ranking +</button>
-          <button className="questionnaire_question_answers_option">Game +</button>
+          <button name="q2-1"className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>Pro</button>
+          <button name="q2-2" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>D1</button>
+          <button name="q2-3" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>Collegiate</button>
+          <button name="q2-4" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>Scholarship</button>
+          <button name="q2-5" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>Ranking +</button>
+          <button name="q2-6"className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler}>Game +</button>
         </div>
         <div className="questionnaire_question_nav">
           <button className="questionnaire_question_nav_button" onClick={onPreviousHandler}>Previous</button>

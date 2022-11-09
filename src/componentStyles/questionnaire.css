@@ -36,6 +36,8 @@
 
 .questionnaire_question_answers_option {
     box-sizing: border-box;
+    border-style: solid;
+    border-radius: 50%;
     font-family: "Be Vietnam Pro";
     font-size: 32px;
     font-weight: 200;
@@ -46,6 +48,11 @@
     background-color: rgba(0,0,0,.80);
     clip-path: circle();
     text-align: center;
+}
+
+.questionnaire_question_answers_option[data-selected="true"] {
+    border-width: 7px; 
+    border-color: whitesmoke;
 }
 
 .questionnaire_question_answers_option:hover {
@@ -88,5 +95,11 @@
     }
     .questionnaire_question_nav {
         width: 100vw;
+    }
+}
+
+@media (max-height: 460px) {
+    .questionnaire {
+        justify-content: flex-start;
     }
 }
