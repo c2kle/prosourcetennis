@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2cd8bc91.css",
-    "main.js": "/static/js/main.a434982d.js",
+    "main.js": "/static/js/main.e9e10e45.js",
     "static/media/grass-court-main-optimized.jpg": "/static/media/grass-court-main-optimized.b6246a07aa4467242d69.jpg",
     "static/media/BeVietnamPro-ExtraLight.ttf": "/static/media/BeVietnamPro-ExtraLight.ff2c3cd9b5ebc63b2668.ttf",
     "static/media/TTLakesNeueExt-Medium.ttf": "/static/media/TTLakesNeueExt-Medium.eac5f70b30036ae5ef48.ttf",
     "index.html": "/index.html",
     "main.2cd8bc91.css.map": "/static/css/main.2cd8bc91.css.map",
-    "main.a434982d.js.map": "/static/js/main.a434982d.js.map"
+    "main.e9e10e45.js.map": "/static/js/main.e9e10e45.js.map"
   },
   "entrypoints": [
     "static/css/main.2cd8bc91.css",
-    "static/js/main.a434982d.js"
+    "static/js/main.e9e10e45.js"
   ]
 }
