@@ -10,20 +10,24 @@ export default function navigation() {
   //     document.getElementsByClassName("navigation-bar_ul")[0].setAttribute("data-menu","false")
   //   }
   // }
+  const onClickHandler = (e) => {
+    const name = e.target.getAttribute("name")
+    window.document.getElementById(name).scrollIntoView()
+  }
 
 
   return (
     <div className="navigation-bar">
       <p className="navigation-bar_logo">PRO SOURCE TENNIS</p>
       <ul className="navigation-bar_ul" data-menu="false">
-        <li className="navigation-bar_ul_li" ><a href="#home">Home</a></li>
-        <li className="navigation-bar_ul_li" ><a href="#about">About</a></li>
-        <li className="navigation-bar_ul_li" ><a href="#team">Team</a></li>
-        <li className="navigation-bar_ul_li"><a href="#services">Services</a></li>
-        <li className="navigation-bar_ul_li"><a href="#store">Store</a></li>
-        <li className="navigation-bar_ul_li"><a href="#contact">Contact</a></li>
+        <li className="navigation-bar_ul_li" name="home" onClick={onClickHandler}>Home</li>
+        <li className="navigation-bar_ul_li" name="about" onClick={onClickHandler}>About</li>
+        <li className="navigation-bar_ul_li" name="team" onClick={onClickHandler}>Team</li>
+        <li className="navigation-bar_ul_li" name="services" onClick={onClickHandler}>Services</li>
+        <li className="navigation-bar_ul_li" name="store" onClick={onClickHandler}>Store</li>
+        <li className="navigation-bar_ul_li" name="contact" onClick={onClickHandler}>Contact</li>
         <li name="seperator" className="navigation-bar_ul_li">|</li>
-        <li className="navigation-bar_ul_li"><a href="#members">Members</a></li>
+        <li className="navigation-bar_ul_li" name="members" onClick={onClickHandler}>Members</li>
       </ul>
       <button className="navigation-bar_burger" type="button" >
         <svg viewBox="0 0 100 60" width="20" height="52">

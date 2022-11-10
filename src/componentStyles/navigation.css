@@ -41,7 +41,7 @@
     text-align: center;
     margin: 10px;
     font-family: "Be Vietnam Pro";
-    font-size: 12px;
+    font-size: small;
     user-select: none;
 
 
@@ -65,12 +65,12 @@
 }
 
 
-a {
+/* a {
     text-decoration: none;
     color: whitesmoke;
     font-size: small;
 
-}
+} */
 
 
 

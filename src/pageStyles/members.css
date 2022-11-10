@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     font-family: 'Be Vietnam Pro';
     height: 85%;
     width: 85%;
@@ -54,4 +54,165 @@
     background-color: rgba(0, 0, 0, 0);
     user-select: none;
     text-align: center;
+}
+
+.login-form {
+    display:flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.login-form__input-div{
+    height: 60px;
+    width: 275px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.login-form__input-div__label {
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+
+.login-form__input-div__input {
+    height: 30px;
+    width: 275px;
+    border-style: none none solid none;
+    border-color: transparent;
+    border-width: 0px 0px .5px 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color:rgb(118,118,118);
+    text-align: center;
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    box-sizing: content-box;
+}
+
+.login-form__input-div__input[name="username"], .login-form__input-div__input[name="password"] {
+    border-color: whitesmoke;
+    color: whitesmoke;
+    /* text-transform: uppercase; */
+    line-height: 2em;
+}
+
+.login-form__input-div__input[name="username"]:focus , .login-form__input-div__input[name="password"]:focus {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.login-form__input-div__input[name="username"]:hover, .login-form__input-div__input[name="password"]:hover {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.login-form__adjust-box {
+    margin-top: 0px;
+    width:275px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    box-sizing: content-box;
+}
+
+.login-form__adjust-box__button {
+    margin:0px 0px 0px 0px;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size:medium;
+    letter-spacing: 1.4px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 200;
+    padding: 0px;
+    border: 0px;
+    box-sizing: content-box;
+}
+
+.login-form__adjust-box__button:hover {
+    color:whitesmoke;
+}
+
+.login-form__adjust-box__button:focus {
+    outline: none;
+    color: whitesmoke;
+}
+
+.login-form__adjust-box__checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.login-form__adjust-box__checkbox-label__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    background-color: whitesmoke;
+    border-radius: 2.5px;
+    border-color: rgb(118,118,118);
+    border-width: 1.2px;
+    border-style: solid;
+}
+
+.login-form__adjust-box__checkbox-label__checkbox:hover {
+    border-color:rgb(82,82,82);
+}
+
+.login-form__adjust-box__checkbox-label__checkbox:checked {
+    background-color: black;
+    border-color: whitesmoke;
+}
+
+.login-form__adjust-box__checkbox-label__checkbox:checked:hover {
+    background-color: rgba(0,0,0,0.865);
+    border-color: rgba(245, 245, 245, 0.865);
+}
+
+
+
+.login-form__adjust-box__checkbox-label__span {
+    margin:0px 0px 0px 3px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size:small;
+    letter-spacing: 1.4px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 200;
+    padding: 0px;
+    border: 0px;
+    box-sizing: content-box;
+}
+
+
+.login-form__space-div {
+    height:50px;
+    margin-top:55px;
+    color: whitesmoke;
+    font-family: 'Be Vietnam Pro';
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+}
+
+.login-form__space-div__span:hover {
+    color:whitesmoke;
+}
+
+.login-form__space-div__span[name="seperator"]:hover {
+    color: rgb(118, 118, 118);
 }

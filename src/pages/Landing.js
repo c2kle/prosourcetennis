@@ -12,11 +12,11 @@ export default function Landing(props) {
 
 
   return (
-    <div style={{height: props.innerHeight}} className="landing">
+    <div style={{height: props.innerHeight}} className="landing" onClick={onClickHandler}>
       <div className="landing_body" >
         PRO SOURCE TENNIS 
       </div>
-      <button className="landing_button" onClick={onClickHandler}>ENTER</button>
+      <button className="landing_button" >ENTER</button>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import '../componentStyles/questionnaire.css'
 
-export default function Questionnaire() {
+export default function Questionnaire(props) {
 
   const [number, setNumber] = useState(0);
 
@@ -14,6 +14,9 @@ export default function Questionnaire() {
     }
   }
 
+  const onExitHandler = () => {
+    props.setDisplayQuestionnaire("false")
+  }
 
   const onNextHandler = () => {
     setNumber(number + 1)
@@ -45,7 +48,7 @@ export default function Questionnaire() {
           <button name="q1-3" className="questionnaire_question_answers_option" data-selected={"false"} onClick={onSelectedHandler} calue="Coach">Coach</button>
         </div>
         <div className="questionnaire_question_nav">
-          <button className="questionnaire_question_nav_button"></button>
+          <button className="questionnaire_question_nav_button" onClick={onExitHandler}>Exit</button>
           <button className="questionnaire_question_nav_button" onClick={onNextHandler}>Next</button>
         </div>
       </div>
