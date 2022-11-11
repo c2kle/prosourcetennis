@@ -8,7 +8,7 @@ import Store from '../pages/Store'
 import Contact from '../pages/Contact'
 import Members from '../pages/Members'
 import '../parentContainerStyles/main.css'
-import Navigation from '../components/Navigation'
+import NavigationBar from '../components/NavigationBar'
 import NavigationMenu from '../components/NavigationMenu'
 
 
@@ -16,11 +16,17 @@ export default function Main(props) {
 
   const [menu,setMenu] = useState("false")
 
+  let displayMenu = <NavigationMenu setMenu={setMenu}/>
+
+  if (menu === "false") {
+    displayMenu = null
+  }
+
   return (
 
     <div className="main">
       <div className="main_header">
-        <Navigation />
+        <NavigationBar menu={menu} setMenu={setMenu}/>
       </div>
       <div style={{height:  `${props.innerHeight - 52}px`}} className="main_body">
         <Home />
@@ -30,7 +36,7 @@ export default function Main(props) {
         <Store />
         <Contact />
         <Members />
-        {/* <NavigationMenu /> */}
+        {displayMenu}
       </div>
     </div>
 
