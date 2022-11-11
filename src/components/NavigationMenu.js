@@ -1,13 +1,12 @@
 import React from 'react'
 import '../componentStyles/navigationMenu.css'
-import NavigationList from './NavigationList'
 
 export default function NavigationMenu(props) {
 
   const onClickHandler = (e) => {
     const name = e.target.getAttribute("name")
-    props.setMenu("false")
     window.document.getElementById(name).scrollIntoView()
+    props.setMenu("false")
   }
 
   return (
