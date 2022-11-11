@@ -1,4 +1,4 @@
-.welcome-wrapper {
+.teamIntro-wrapper {
     flex-shrink: 0;
     height: 100%;
     width: 100%;
@@ -10,7 +10,7 @@
 
 }
 
-.welcome-wrapper_section {
+.teamIntro-wrapper_section {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 
 }
 
-.welcome-wrapper_section_h1 {
+.teamIntro-wrapper_section_h1 {
     color: whitesmoke;
     width: 500px;
     font-size: 32px;
@@ -32,18 +32,22 @@
     margin-bottom: 30px;
 }
 
-.welcome-wrapper_section_p {
+.teamIntro-wrapper_section_p {
     color:whitesmoke;
-    font-size: medium;
-    /* height: 150px; */
     width: 500px;
     /* word-break: break-all; */
-    hyphens: auto;
     text-align: justify;
+    overflow-y: scroll;
+    hyphens: auto;
+    scrollbar-width: none;
     margin-bottom: 30px;
 }
 
-.welcome-wrapper_section_button {
+.teamIntro-wrapper_section_p::-webkit-scrollbar {
+    display: none;
+}
+
+.teamIntro-wrapper_section_button {
     color: whitesmoke;
     font-family: 'Be Vietnam Pro';
     font-size: large;
@@ -55,15 +59,17 @@
 }
 
 @media (max-width: 780px) {
-    .welcome-wrapper_section_h1 {
+    .teamIntro-wrapper_section_h1 {
         width: 200px;
         font-size: large;
     }
-    .welcome-wrapper_section_p {
+    .teamIntro-wrapper_section_p {
+        height: 100px;
         width: 200px;
         font-size: small;
     }
-    .welcome-wrapper_section_button {
+    .teamIntro-wrapper_section_button {
         font-size: medium;
     }
+
 }

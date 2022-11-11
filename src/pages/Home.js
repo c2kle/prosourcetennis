@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import Questionnaire from '../components/Questionnaire'
-import Welcome from '../components/Welcome';
+import HomeIntro from '../components/HomeIntro';
 import '../pageStyles/home.css'
 
 export default function Home() {
 
   const [displayQuestionnaire, setDisplayQuestionnaire] = useState("false")
 
-  let pageContent = <Welcome setDisplayQuestionnaire={setDisplayQuestionnaire}/>;
+  let pageContent = <HomeIntro setDisplayQuestionnaire={setDisplayQuestionnaire}/>;
 
   if(displayQuestionnaire === "true") {
     pageContent = <Questionnaire setDisplayQuestionnaire={setDisplayQuestionnaire}/>
