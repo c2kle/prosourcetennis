@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff1b02e8.css",
-    "main.js": "/static/js/main.aa015543.js",
+    "main.css": "/static/css/main.9ac0be11.css",
+    "main.js": "/static/js/main.350f242d.js",
+    "static/media/nick-stachowiak.png": "/static/media/nick-stachowiak.faa20a9127dbdbe63430.png",
+    "static/media/strong-kirchheimer.png": "/static/media/strong-kirchheimer.152bff631d527d651f31.png",
     "static/media/grass-court-main-optimized.jpg": "/static/media/grass-court-main-optimized.b6246a07aa4467242d69.jpg",
+    "static/media/ashley-hewitt.png": "/static/media/ashley-hewitt.58e729ed5d778a5313e0.png",
     "static/media/BeVietnamPro-ExtraLight.ttf": "/static/media/BeVietnamPro-ExtraLight.ff2c3cd9b5ebc63b2668.ttf",
     "static/media/TTLakesNeueExt-Medium.ttf": "/static/media/TTLakesNeueExt-Medium.eac5f70b30036ae5ef48.ttf",
     "index.html": "/index.html",
-    "main.ff1b02e8.css.map": "/static/css/main.ff1b02e8.css.map",
-    "main.aa015543.js.map": "/static/js/main.aa015543.js.map"
+    "main.9ac0be11.css.map": "/static/css/main.9ac0be11.css.map",
+    "main.350f242d.js.map": "/static/js/main.350f242d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff1b02e8.css",
-    "static/js/main.aa015543.js"
+    "static/css/main.9ac0be11.css",
+    "static/js/main.350f242d.js"
   ]
 }
