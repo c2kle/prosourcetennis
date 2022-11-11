@@ -114,8 +114,9 @@
     }
     .team-profiles-wrapper_section {
         margin: 0px;
+        width: 100%; 
     }
-    .team-profiles-wrapper_nav-button{
+    .team-profiles-wrapper_nav_button{
         position: relative;
         font-family:"Be Vietnam Pro";
         background-color:transparent;

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5e69126.css",
+    "main.css": "/static/css/main.f6f8c57c.css",
     "main.js": "/static/js/main.321c268e.js",
     "static/media/nick-stachowiak.png": "/static/media/nick-stachowiak.faa20a9127dbdbe63430.png",
     "static/media/strong-kirchheimer.png": "/static/media/strong-kirchheimer.152bff631d527d651f31.png",
@@ -9,11 +9,11 @@
     "static/media/BeVietnamPro-ExtraLight.ttf": "/static/media/BeVietnamPro-ExtraLight.ff2c3cd9b5ebc63b2668.ttf",
     "static/media/TTLakesNeueExt-Medium.ttf": "/static/media/TTLakesNeueExt-Medium.eac5f70b30036ae5ef48.ttf",
     "index.html": "/index.html",
-    "main.e5e69126.css.map": "/static/css/main.e5e69126.css.map",
+    "main.f6f8c57c.css.map": "/static/css/main.f6f8c57c.css.map",
     "main.321c268e.js.map": "/static/js/main.321c268e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5e69126.css",
+    "static/css/main.f6f8c57c.css",
     "static/js/main.321c268e.js"
   ]
 }
