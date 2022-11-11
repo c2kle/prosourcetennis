@@ -23,7 +23,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    align-items:center;
+    /* width: 100%; */
 
 }
 
@@ -85,10 +86,9 @@
     margin-bottom: 20px;
 }
 
-.team-profiles-wrapper_footer {
-    scroll-snap-align: start;
+/* .team-profiles-wrapper_footer {
 
-}
+} */
 
 .team-profiles-wrapper_body_section_profle[name="ashley-hewitt"] {
     background-image: url("../../public/ashley-hewitt.png");
@@ -129,6 +129,6 @@
     }
     .team-profiles-wrapper_body_section {
         margin: 0px;
-        width: 100%; 
+        /* width: 100%;  */
     }
 }

@@ -33,6 +33,7 @@ export default function TeamProfiles(props) {
                     <div name="strong-kirchheimer" className="team-profiles-wrapper_body_section_profle"></div>
                     <button className="team-profiles-wrapper_body_section_button" >Bio: Strong Kirchheimer</button>
                 </div>
+                
             </div>
             <div className="team-profiles-wrapper_footer">
                 <div className="team-profiles-wrapper_footer_nav-button" onClick={onClickHandler}>Back</div>
