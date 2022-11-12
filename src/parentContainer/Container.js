@@ -20,7 +20,7 @@ export default function Container() {
     document.getElementsByName("viewport")[0].remove()
     let meta = document.createElement("meta")
     meta.name = "viewport"
-    meta.content = "width=device-width, initial-scale=1"
+    meta.content = `height=${window.innerHeight}, width=device-width, initial-scale=1`
     document.getElementsByTagName("head")[0].appendChild(meta)
   }, 20)
 
