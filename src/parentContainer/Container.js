@@ -27,7 +27,7 @@ export default function Container() {
 
   window.addEventListener('resize', () => {
     setInnerHeight(window.innerHeight)
-    setAvailWidth(window.screen.wdth)
+    setAvailWidth(window.screen.width)
   })
 
   window.addEventListener('orientationchange', () => {
