@@ -10,7 +10,6 @@ export default function Container() {
 
 
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
-  const [availWidth, setAvailWidth] = useState(window.screen.width)
   const [landed,setLanded] = useState(false)
 
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
@@ -27,12 +26,10 @@ export default function Container() {
 
   window.addEventListener('resize', () => {
     setInnerHeight(window.innerHeight)
-    setAvailWidth(window.screen.width)
   })
 
   window.addEventListener('orientationchange', () => {
     setInnerHeight(window.innerHeight)
-    setAvailWidth(window.screen.width)
   })
 
 
@@ -47,6 +44,6 @@ export default function Container() {
 
   return (
     // <div className="container">{bodyContent}</div>
-    <div className="container" style={{ height: innerHeight, width: availWidth }}>{bodyContent}</div>
+    <div className="container" style={{ height: innerHeight}}>{bodyContent}</div>
   )
 }
