@@ -25,14 +25,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
-    width: 100%;
 
 }
 
 
 .team-profiles-wrapper_body_section {
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
     flex-shrink: 0;
     padding: 10px;
     /* border-style: solid;
@@ -131,9 +130,10 @@
     .team-profiles-wrapper_body {
         flex-direction: column;
         justify-content: flex-start;
+        width: 100%;
     }
     .team-profiles-wrapper_body_section {
         margin: 0px;
-        /* width: 100%;  */
+        width: 100%; 
     }
 }
