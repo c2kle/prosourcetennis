@@ -1,6 +1,5 @@
 .main {
     display: grid;
-    grid-template-rows: 1fr 11fr;
     grid-template-columns: 100%;
     overflow: hidden;
 
