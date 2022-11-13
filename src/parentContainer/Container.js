@@ -17,7 +17,8 @@ export default function Container() {
   
 
   const debouncedVersion = useDebouncedCallback(() => {
-    window.alert(window.visualViewport.height)
+    window.alert(window.visualViewport.width,window.visualViewport.height,window.innerWidth,window.innerHeight)
+
   }, 200)
 
   // window.addEventListener('resize', debouncedVersion)
