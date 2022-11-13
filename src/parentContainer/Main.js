@@ -24,7 +24,7 @@ export default function Main(props) {
 
   return (
 
-    <div className="main" style={{height: props.innerHeight, gridTemplateRows: `52px ${props.innerHeight - 52}px`}}>
+    <div className="main" style={{height: props.innerHeight}}>
       <div className="main_header">
         <NavigationBar menu={menu} setMenu={setMenu}/>
       </div>
