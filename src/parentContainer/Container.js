@@ -19,10 +19,10 @@ export default function Container() {
   const debouncedHeight = useDebouncedCallback(() => {
     if (window.innerHeight > window.innerWidth ) {
       let heightRatio = (sessionStorage.getItem("portrait-height")/window.innerHeight) 
-      setInnerHeight(window.innerHeight * heightRatio)
+      setInnerHeight(sessionStorage.getItem("portrait-height") * heightRatio)
     } else {
       let heightRatio = (sessionStorage.getItem("landscape-height")/window.innerHeight)
-      setInnerHeight(window.innerHeight * heightRatio) 
+      setInnerHeight(sessionStorage.getItem("landscape-height") * heightRatio) 
     } 
     
   }, 1000)
@@ -30,10 +30,10 @@ export default function Container() {
   const debouncedWidth = useDebouncedCallback(() => {
     if (window.innerHeight > window.innerWidth ) {
       let widthRatio = (sessionStorage.getItem("portrait-width")/window.innerWidth) 
-      setInnerHeight(window.innerWidth * widthRatio)
+      setInnerHeight(sessionStorage.getItem("portrait-width") * widthRatio)
     } else {
       let widthRatio = (sessionStorage.getItem("landscape-width")/window.innerWidth)
-      setInnerHeight(window.innerWidth * widthRatio) 
+      setInnerHeight(sessionStorage.getItem("landscape-width") * widthRatio) 
     } 
     
   }, 1000)
