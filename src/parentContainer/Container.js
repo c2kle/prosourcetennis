@@ -3,12 +3,12 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
-import { useRouteLoaderData } from 'react-router-dom';
 // import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
 
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
   const [landed,setLanded] = useState(false)
 
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
@@ -27,9 +27,17 @@ export default function Container() {
     setInnerHeight(window.innerHeight)
   })
 
+  window.addEventListener('resize', () => {
+    setInnerWidth(window.innerWidth)
+  })
+
+
   window.addEventListener('orientationchange', () => {
     setInnerHeight(window.innerHeight)
-    window.location.reload()
+  })
+
+  window.addEventListener('orientationchange', () => {
+    setInnerWidth(window.innerWidth)
   })
 
   // window.addEventListener('orientationchange', debouncedVersion)
@@ -46,6 +54,6 @@ export default function Container() {
 
   return (
     // <div className="container">{bodyContent}</div>
-    <div className="container" style={{ height: innerHeight}}>{bodyContent}</div>
+    <div className="container" style={{ height: innerHeight, width: innerWidth}}>{bodyContent}</div>
   )
 }
