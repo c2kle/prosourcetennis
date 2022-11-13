@@ -72,7 +72,7 @@
     justify-content: space-between;
     align-items: center; 
     width: 100%;
-    background-color: transparent
+    background-color: transparent;
 }
 
 
@@ -95,6 +95,8 @@
     }
     .questionnaire_question_nav {
         width: 100vw;
+        margin-top: 30px;
+        padding-bottom: 70px;
     }
 }
 
