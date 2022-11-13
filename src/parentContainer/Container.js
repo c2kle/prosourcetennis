@@ -28,9 +28,9 @@ export default function Container() {
     setInnerHeight(window.innerHeight)
   })
 
-  // window.addEventListener('orientationchange', () => {
-  //   setInnerHeight(window.screen.innerHeight)
-  // })
+  window.addEventListener('orientationchange', () => {
+    setInnerHeight(window.screen.innerHeight)
+  })
 
   // window.addEventListener('orientationchange', debouncedVersion)
 
