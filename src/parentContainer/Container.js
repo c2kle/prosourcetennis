@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
@@ -6,8 +6,6 @@ import { useState } from 'react';
 // import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
-
-
 
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
   const [landed,setLanded] = useState(false)
@@ -29,7 +27,7 @@ export default function Container() {
   })
 
   window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.screen.innerHeight)
+    setInnerHeight(sessionStorage.getItem("height"))
   })
 
   // window.addEventListener('orientationchange', debouncedVersion)

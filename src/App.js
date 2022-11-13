@@ -3,6 +3,10 @@ import Container from './parentContainer/Container';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
+
+  
+  sessionStorage.setItem("height", window.innerHeight)
+  
   return (
     <BrowserRouter>
     <Routes>
