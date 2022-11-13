@@ -1,6 +1,7 @@
 .main {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-rows: 52px calc(100vh - 52px);
+    grid-template-columns: 1fr;
     overflow: hidden;
 
 }
@@ -14,7 +15,6 @@
     display: flex;
     grid-row: 2/3;
     grid-column: 1/2 ;
-    /* background-image: url(../../public/grass-court-main-optimized.jpg); */
     background-position: center;
     background-size: cover;
     overflow-x:auto;
