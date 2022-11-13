@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-template-rows: 52px calc(100vh - 52px);
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     overflow: hidden;
 
 }

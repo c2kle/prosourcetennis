@@ -2,7 +2,7 @@
     background-image: url('../../public/grass-court-main-optimized.jpg');
     background-position: center;
     background-size: cover;
-    overflow: hidden;
+    overflow-y: hidden;
     height: 100vh;
     width: 100vw;
 }
