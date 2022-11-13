@@ -24,11 +24,11 @@ export default function Main(props) {
 
   return (
 
-    <div className="main" style={{height: props.innerHeight, gridTemplateRows: `52px ${props.innerHeight - 52}px`}}>
+    <div className="main">
       <div className="main_header">
         <NavigationBar menu={menu} setMenu={setMenu}/>
       </div>
-      <div style={{height:  `${props.innerHeight - 52}px`}} className="main_body">
+      <div className="main_body">
         <Home />
         <About />
         <Team />
