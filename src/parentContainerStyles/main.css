@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 100%;
     overflow: hidden;
+    min-height: 90vh;
+    min-width: 90vw;
 
 }
 
@@ -24,8 +26,6 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     width: 100%;
-    min-height: 90vh;
-    min-width: 90vw;
 
 }
 
