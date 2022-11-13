@@ -17,7 +17,10 @@ export default function Container() {
   
 
   const debouncedVersion = useDebouncedCallback(() => {
-    window.alert(window.visualViewport.width,window.visualViewport.height,window.innerWidth,window.innerHeight)
+    window.alert(window.visualViewport.width)
+    window.alert(window.innerWidth)
+    window.alert(window.visualViewport.height)
+    window.alert(window.innerHeight)
 
   }, 200)
 
