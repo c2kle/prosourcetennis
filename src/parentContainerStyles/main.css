@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: 100%;
     overflow: hidden;
-    min-height: 90vh;
-    min-width: 90vw;
+    background-color: blueviolet;
 
 }
 
@@ -16,7 +15,7 @@
     display: flex;
     grid-row: 2/3;
     grid-column: 1/2 ;
-    /* background-image: url(../../public/grass-court-main-optimized.jpg); */
+    background-color: aqua;
     background-position: center;
     background-size: cover;
     overflow-x:auto;
