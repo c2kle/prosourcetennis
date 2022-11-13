@@ -3,7 +3,7 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
-import { useDebouncedCallback } from 'use-debounce'
+// import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
 
@@ -28,9 +28,9 @@ export default function Container() {
     setInnerHeight(window.innerHeight)
   })
 
-  window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.screen.availHeight)
-  })
+  // window.addEventListener('orientationchange', () => {
+  //   setInnerHeight(window.screen.innerHeight)
+  // })
 
   // window.addEventListener('orientationchange', debouncedVersion)
 
