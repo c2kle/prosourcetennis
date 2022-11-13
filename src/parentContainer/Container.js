@@ -3,7 +3,7 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
-// import { useDebouncedCallback } from 'use-debounce'
+import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
 
@@ -15,9 +15,10 @@ export default function Container() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   
 
-  // const debouncedVersion = useDebouncedCallback(() => {
-  //   setInnerHeight(window.innerHeight)
-  // }, 20)
+  const debouncedVersion = useDebouncedCallback(() => {
+    console.log('debounced')
+    window.dispatchEvent( new Event('resize'))
+  }, 200)
 
   // window.addEventListener('resize', debouncedVersion)
 
@@ -31,6 +32,8 @@ export default function Container() {
   window.addEventListener('orientationchange', () => {
     setInnerHeight(window.innerHeight)
   })
+
+  window.addEventListener('orientationchange', debouncedVersion)
 
 
   let bodyContent;
