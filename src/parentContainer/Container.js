@@ -7,8 +7,6 @@ import { useState } from 'react';
 
 export default function Container() {
 
-  console.log((window.outerWidth /window.innerWidth))
-
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
   const [innerWidth, setInnerWidth] = useState(window.innerWidth)
   const [landed,setLanded] = useState(false)
@@ -26,20 +24,20 @@ export default function Container() {
   // window.addEventListener('orientationchange', debouncedVersion)
 
   window.addEventListener('resize', () => {
-    setInnerHeight(window.innerHeight * (window.outerWidth /window.innerWidth))
+    setInnerHeight(window.innerHeight)
   })
 
   window.addEventListener('resize', () => {
-    setInnerWidth(window.innerWidth* (window.outerWidth /window.innerWidth))
+    setInnerWidth(window.innerWidth)
   })
 
 
   window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.innerHeight * (window.outerWidth /window.innerWidth))
+    setInnerHeight(window.innerHeight)
   })
 
   window.addEventListener('orientationchange', () => {
-    setInnerWidth(window.innerWidth * (window.outerWidth /window.innerWidth))
+    setInnerWidth(window.innerWidth)
   })
 
 
