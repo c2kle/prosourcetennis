@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
@@ -18,6 +18,7 @@ export default function Container() {
   const debouncedVersion = useDebouncedCallback(() => {
     console.log('debounced')
     window.dispatchEvent( new Event('resize'))
+    window.alert("running test")
   }, 200)
 
   // window.addEventListener('resize', debouncedVersion)
