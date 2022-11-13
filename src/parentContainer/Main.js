@@ -38,7 +38,6 @@ export default function Main() {
         <Members />
         {displayMenu}
       </div>
-      <div className="main_footer"></div>
     </div>
 
   )
