@@ -16,13 +16,27 @@ export default function Container() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   
 
-  const debouncedVersion = useDebouncedCallback(() => {
-    window.alert(window.visualViewport.width)
-    window.alert(window.innerWidth)
-    window.alert(window.visualViewport.height)
-    window.alert(window.innerHeight)
+  const debouncedHeight = useDebouncedCallback(() => {
+    if (window.innerHeight > window.innerWidth ) {
+      let heightRatio = (sessionStorage.getItem("portrait-height")/window.innerHeight) 
+      setInnerHeight(window.innerHeight * heightRatio)
+    } else {
+      let heightRatio = (sessionStorage.getItem("landscape-height")/window.innerHeight)
+      setInnerHeight(window.innerHeight * heightRatio) 
+    } 
+    
+  }, 1000)
 
-  }, 200)
+  const debouncedWidth = useDebouncedCallback(() => {
+    if (window.innerHeight > window.innerWidth ) {
+      let widthRatio = (sessionStorage.getItem("portrait-width")/window.innerWidth) 
+      setInnerHeight(window.innerWidth * widthRatio)
+    } else {
+      let widthRatio = (sessionStorage.getItem("landscape-width")/window.innerWidth)
+      setInnerHeight(window.innerWidth * widthRatio) 
+    } 
+    
+  }, 1000)
 
   // window.addEventListener('resize', debouncedVersion)
 
@@ -46,10 +60,8 @@ export default function Container() {
     setInnerWidth(window.innerWidth)
   })
 
-  window.addEventListener('orientationchange', debouncedVersion)
-
-
-  // window.addEventListener('orientationchange', debouncedVersion)
+  window.addEventListener('orientationchange', debouncedHeight)
+  window.addEventListener('orientationchange', debouncedWidth)
 
 
   let bodyContent;
