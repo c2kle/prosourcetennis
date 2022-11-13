@@ -3,7 +3,7 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
-import { useDebouncedCallback } from 'use-debounce'
+// import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
 
@@ -16,27 +16,27 @@ export default function Container() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   
 
-  const debouncedHeight = useDebouncedCallback(() => {
-    if (window.innerHeight > window.innerWidth ) {
-      let heightRatio = (sessionStorage.getItem("portrait-height")/window.innerHeight) 
-      setInnerHeight(sessionStorage.getItem("portrait-height") * heightRatio)
-    } else {
-      let heightRatio = (sessionStorage.getItem("landscape-height")/window.innerHeight)
-      setInnerHeight(sessionStorage.getItem("landscape-height") * heightRatio) 
-    } 
+  // const debouncedHeight = useDebouncedCallback(() => {
+  //   if (window.innerHeight > window.innerWidth ) {
+  //     let heightRatio = (sessionStorage.getItem("portrait-height")/window.innerHeight) 
+  //     setInnerHeight(sessionStorage.getItem("portrait-height") * heightRatio)
+  //   } else {
+  //     let heightRatio = (sessionStorage.getItem("landscape-height")/window.innerHeight)
+  //     setInnerHeight(sessionStorage.getItem("landscape-height") * heightRatio) 
+  //   } 
     
-  }, 1000)
+  // }, 1000)
 
-  const debouncedWidth = useDebouncedCallback(() => {
-    if (window.innerHeight > window.innerWidth ) {
-      let widthRatio = (sessionStorage.getItem("portrait-width")/window.innerWidth) 
-      setInnerHeight(sessionStorage.getItem("portrait-width") * widthRatio)
-    } else {
-      let widthRatio = (sessionStorage.getItem("landscape-width")/window.innerWidth)
-      setInnerHeight(sessionStorage.getItem("landscape-width") * widthRatio) 
-    } 
+  // const debouncedWidth = useDebouncedCallback(() => {
+  //   if (window.innerHeight > window.innerWidth ) {
+  //     let widthRatio = (sessionStorage.getItem("portrait-width")/window.innerWidth) 
+  //     setInnerHeight(sessionStorage.getItem("portrait-width") * widthRatio)
+  //   } else {
+  //     let widthRatio = (sessionStorage.getItem("landscape-width")/window.innerWidth)
+  //     setInnerHeight(sessionStorage.getItem("landscape-width") * widthRatio) 
+  //   } 
     
-  }, 1000)
+  // }, 1000)
 
   // window.addEventListener('resize', debouncedVersion)
 
@@ -60,8 +60,8 @@ export default function Container() {
     setInnerWidth(window.innerWidth)
   })
 
-  window.addEventListener('orientationchange', debouncedHeight)
-  window.addEventListener('orientationchange', debouncedWidth)
+  // window.addEventListener('orientationchange', debouncedHeight)
+  // window.addEventListener('orientationchange', debouncedWidth)
 
 
   let bodyContent;
