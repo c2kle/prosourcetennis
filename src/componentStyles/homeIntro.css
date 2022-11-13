@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
-    min-height: 90vh;
-    min-width: 90vw;
 
 }
 
@@ -59,12 +57,10 @@
 
 @media (max-width: 780px) {
     .homeIntro-wrapper_section_h1 {
-        min-width: 50vw;
         width: 200px;
         font-size: large;
     }
     .homeIntro-wrapper_section_p {
-        min-width: 50vw;
         width: 200px;
         font-size: small;
     }

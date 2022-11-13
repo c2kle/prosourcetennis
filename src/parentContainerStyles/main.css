@@ -24,6 +24,8 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     width: 100%;
+    min-height: 90vh;
+    min-width: 90vw;
 
 }
 
