@@ -7,6 +7,8 @@ import { useState } from 'react';
 
 export default function Container() {
 
+  console.log(window.devicePixelRatio / document.documentElement.clientWidth)
+
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
   const [innerWidth, setInnerWidth] = useState(window.innerWidth)
   const [landed,setLanded] = useState(false)
@@ -38,6 +40,10 @@ export default function Container() {
 
   window.addEventListener('orientationchange', () => {
     setInnerWidth(window.innerWidth)
+  })
+
+  window.addEventListener('orientationchange', () => {
+    document.body.style.zoom = "100%"
   })
 
   // window.addEventListener('orientationchange', debouncedVersion)
