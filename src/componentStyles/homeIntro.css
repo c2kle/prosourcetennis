@@ -56,13 +56,13 @@
 
 @media (max-width: 780px) {
     .homeIntro-wrapper_section_h1 {
-        width: 50vw;
-        /* width: 200px; */
+        min-width: 50vw;
+        width: 200px;
         font-size: large;
     }
     .homeIntro-wrapper_section_p {
-        width: 50vw;
-        /* width: 200px; */
+        min-width: 50vw;
+        width: 200px;
         font-size: small;
     }
     .homeIntro-wrapper_section_button {

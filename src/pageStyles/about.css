@@ -14,8 +14,6 @@
     scroll-snap-type: y proximity;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    min-height: 100vh;
-    min-width: 100vw;
 
 }
 
