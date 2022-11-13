@@ -15,11 +15,9 @@ export default function Container() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   
 
-  const debouncedVersion = useDebouncedCallback(() => {
-    console.log('debounced')
-    window.dispatchEvent( new Event('resize'))
-    window.alert("running test")
-  }, 200)
+  // const debouncedVersion = useDebouncedCallback(() => {
+  //   window.alert(window.devicePixelRatio)
+  // }, 200)
 
   // window.addEventListener('resize', debouncedVersion)
 
@@ -31,10 +29,10 @@ export default function Container() {
   })
 
   window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.innerHeight)
+    setInnerHeight(window.screen.availHeight)
   })
 
-  window.addEventListener('orientationchange', debouncedVersion)
+  // window.addEventListener('orientationchange', debouncedVersion)
 
 
   let bodyContent;
