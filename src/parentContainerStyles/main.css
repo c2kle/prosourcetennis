@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: 100%;
     overflow: hidden;
-    min-height: 90vh;
-    min-width: 90vw;
 
 }
 

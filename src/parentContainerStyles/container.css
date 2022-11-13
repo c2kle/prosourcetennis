@@ -3,4 +3,6 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    min-height: 90vh;
+    min-width: 90vw;
 }
