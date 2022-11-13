@@ -3,9 +3,11 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
-// import { useDebouncedCallback } from 'use-debounce'
+import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {
+
+
 
   const [innerHeight, setInnerHeight] = useState(window.innerHeight)
   const [innerWidth, setInnerWidth] = useState(window.innerWidth)
@@ -14,9 +16,9 @@ export default function Container() {
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
   
 
-  // const debouncedVersion = useDebouncedCallback(() => {
-  //   window.alert(window.devicePixelRatio)
-  // }, 200)
+  const debouncedVersion = useDebouncedCallback(() => {
+    window.alert(window.visualViewport.height)
+  }, 200)
 
   // window.addEventListener('resize', debouncedVersion)
 
@@ -40,6 +42,7 @@ export default function Container() {
     setInnerWidth(window.innerWidth)
   })
 
+  window.addEventListener('orientationchange', debouncedVersion)
 
 
   // window.addEventListener('orientationchange', debouncedVersion)
