@@ -28,7 +28,7 @@ export default function Main(props) {
       <div className="main_header">
         <NavigationBar menu={menu} setMenu={setMenu}/>
       </div>
-      <div style={{height:  `${props.innerHeight - 52}px`}} className="main_body">
+      <div className="main_body">
         <Home />
         <About />
         <Team />
