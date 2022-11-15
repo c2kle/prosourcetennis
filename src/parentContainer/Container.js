@@ -66,15 +66,16 @@ export default function Container() {
 
 
   let bodyContent;
+  bodyContent = <Main innerHeight={innerHeight} />
 
-  if (landed === true) {
-    bodyContent = <Main innerHeight={innerHeight} />
-    // bodyContent = <Main />
-  }
-  else {
-    bodyContent = <Landing innerHeight={innerHeight} setLanded={setLanded} />
-    // bodyContent = <Landing setLanded={setLanded} />
-  }
+  // if (landed === true) {
+  //   bodyContent = <Main innerHeight={innerHeight} />
+  //   // bodyContent = <Main />
+  // }
+  // else {
+  //   bodyContent = <Landing innerHeight={innerHeight} setLanded={setLanded} />
+  //   // bodyContent = <Landing setLanded={setLanded} />
+  // }
 
   return (
     // <div className="container">{bodyContent}</div>
