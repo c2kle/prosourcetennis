@@ -20,3 +20,10 @@
 .home::-webkit-scrollbar {
     display: none;
 }
+
+@media (max-width: 780px) {
+    .home{
+        height: auto;
+        width: auto;
+    }
+}

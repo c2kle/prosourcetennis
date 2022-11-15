@@ -32,10 +32,10 @@ export default function Main(props) {
         <Home />
         <About />
         <Team />
-        <Services />
+        {/* <Services />
         <Store />
         <Contact />
-        <Members />
+        <Members /> */}
         {displayMenu}
       </div>
     </div>

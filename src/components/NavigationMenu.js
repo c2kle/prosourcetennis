@@ -5,7 +5,7 @@ export default function NavigationMenu(props) {
 
   const onClickHandler = (e) => {
     const name = e.target.getAttribute("name")
-    window.document.getElementById(name).scrollIntoView({ block: "end" })
+    window.document.getElementById(name).scrollIntoView({ block: "start" })
     props.setMenu("false")
   }
 

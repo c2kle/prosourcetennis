@@ -5,8 +5,8 @@
     background-color: transparent;
     scroll-snap-align: start;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
     overflow-x: hidden;
@@ -21,3 +21,9 @@
     display: none;
 }
 
+@media (max-width: 780px) {
+    .team{
+        height: auto;
+        width: auto;
+    }
+}

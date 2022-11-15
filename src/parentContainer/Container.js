@@ -3,6 +3,7 @@ import '../parentContainerStyles/container.css'
 import Main from './Main';
 import Landing from '../pages/Landing';
 import { useState } from 'react';
+import MainMobile from './MainMobile';
 // import { useDebouncedCallback } from 'use-debounce'
 
 export default function Container() {

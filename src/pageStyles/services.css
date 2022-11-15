@@ -41,9 +41,10 @@
     align-items: center;
     background-color: rgba(0, 0, 0, .8);
     font-family: 'Be Vietnam Pro';
-    height: 85%;
-    width: 85%;
-    clip-path: circle();
+    height: 100%;
+    width: 100%;
+    /* clip-path: circle(); */
+    padding: 30px;
 
 
 }
