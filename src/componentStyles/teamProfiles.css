@@ -25,6 +25,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
+    overflow-y: auto;
+    scroll-snap-type: y proximity;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-sizing: border-box;
 
 }
 

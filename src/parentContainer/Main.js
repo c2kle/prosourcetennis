@@ -33,9 +33,9 @@ export default function Main(props) {
         <About />
         <Team />
         {/* <Services />
-        <Store />
+        <Store /> */}
         <Contact />
-        <Members /> */}
+        {/* <Members /> */}
         {displayMenu}
       </div>
     </div>
