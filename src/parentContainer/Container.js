@@ -10,8 +10,8 @@ export default function Container() {
 
 
 
-  const [innerHeight, setInnerHeight] = useState(window.innerHeight)
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
+  const [innerHeight, setInnerHeight] = useState("100vh")
+  const [innerWidth, setInnerWidth] = useState("100vw")
   const [landed,setLanded] = useState(false)
 
   //innerWidth bug, can use outerWidth since browser toolbars are vertical
@@ -44,22 +44,22 @@ export default function Container() {
 
   // window.addEventListener('orientationchange', debouncedVersion)
 
-  window.addEventListener('resize', () => {
-    setInnerHeight(window.innerHeight)
-  })
+  // window.addEventListener('resize', () => {
+  //   setInnerHeight(window.innerHeight)
+  // })
 
-  window.addEventListener('resize', () => {
-    setInnerWidth(window.innerWidth)
-  })
+  // window.addEventListener('resize', () => {
+  //   setInnerWidth(window.innerWidth)
+  // })
 
 
-  window.addEventListener('orientationchange', () => {
-    setInnerHeight(window.innerHeight)
-  })
+  // window.addEventListener('orientationchange', () => {
+  //   setInnerHeight(window.innerHeight)
+  // })
 
-  window.addEventListener('orientationchange', () => {
-    setInnerWidth(window.innerWidth)
-  })
+  // window.addEventListener('orientationchange', () => {
+  //   setInnerWidth(window.innerWidth)
+  // })
 
   // window.addEventListener('orientationchange', debouncedHeight)
   // window.addEventListener('orientationchange', debouncedWidth)
