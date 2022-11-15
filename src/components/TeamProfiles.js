@@ -36,7 +36,7 @@ export default function TeamProfiles(props) {
                 
             </div>
             <div className="team-profiles-wrapper_footer">
-                <div className="team-profiles-wrapper_footer_nav-button" onClick={onClickHandler}>Back</div>
+                <div className="team-profiles-wrapper_footer_nav-button" onClick={onClickHandler}>Hide</div>
             </div>
         </div>
     )

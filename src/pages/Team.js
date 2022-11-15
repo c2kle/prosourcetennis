@@ -7,7 +7,8 @@ export default function Team() {
 
   const [displayProfiles, setDisplayProfiles] = useState("false")
 
-  let pageContent = <TeamIntro setDisplayProfiles={setDisplayProfiles}/>;
+  let pageContent = <TeamIntro setDisplayProfiles={setDisplayProfiles}/>
+
 
   if(displayProfiles === "true") {
     pageContent = <TeamProfiles setDisplayProfiles={setDisplayProfiles}/>
