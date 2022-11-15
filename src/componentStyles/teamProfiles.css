@@ -141,4 +141,14 @@
         margin: 0px;
         width: 100%; 
     }
+    .team-profiles-wrapper_footer {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0,0,0,.8);
+      }
+    .team-profiles-wrapper_footer_nav-button{
+        color: whitesmoke;
+    }
 }

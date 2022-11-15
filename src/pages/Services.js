@@ -1,16 +1,13 @@
 import React from 'react'
 import '../pageStyles/services.css'
+import ServicesIntro from '../components/ServicesIntro'
 
-export default function Services(props) {
+export default function Services() {
 
 
     return (
-        <div style={{height: `${props.innerHeight}px`, width: `${props.innerWidth}px`}} id="services" className="services">
-            <div className="services_wrapper">
-                <div className="services_wrapper_section">
-                    <h1 className="services_wrapper_section_h1">SERVICES</h1>
-                </div>
-            </div>
+        <div id="services" className="services">
+            <ServicesIntro />
         </div>
 
     )

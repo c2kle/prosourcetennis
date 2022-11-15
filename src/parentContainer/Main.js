@@ -32,8 +32,8 @@ export default function Main(props) {
         <Home />
         <About />
         <Team />
-        {/* <Services />
-        <Store /> */}
+        <Services />
+        {/* <Store />  */}
         <Contact />
         {/* <Members /> */}
         {displayMenu}
