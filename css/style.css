@@ -288,6 +288,7 @@ h3.heading {
 /*-- Team Light Background Image --*/
 .fixed-light {
   /* background-image: url('../img/fixed/clay-court.jpg'); */
+  background-color: white;
   z-index: -1;
   position: fixed;
   width: 100%;
