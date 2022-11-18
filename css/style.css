@@ -6,6 +6,10 @@ html {
   padding: env(safe-area-inset);
 }
 
+body {
+  background-color: white;
+}
+
 /*-- Prevent Horizontal Scrolling & Font Style --*/
 html, body {
   overflow-x: hidden;
