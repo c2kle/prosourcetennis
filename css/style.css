@@ -216,7 +216,7 @@ h3.heading {
   z-index: -999;
 }
 .fixed-dark {
-  background-image: url('../img/fixed/delray.jpg');
+  /* background-image: url('../img/fixed/delray.jpg'); */
   z-index: -1;
   position: fixed;
   width: 100%;
@@ -287,7 +287,7 @@ h3.heading {
 
 /*-- Team Light Background Image --*/
 .fixed-light {
-  background-image: url('../img/fixed/clay-court.jpg');
+  /* background-image: url('../img/fixed/clay-court.jpg'); */
   z-index: -1;
   position: fixed;
   width: 100%;
@@ -497,10 +497,10 @@ a.top-scroll:hover {
     font-size: 2rem;
   }
   .fixed-dark {
-    background-image: url('../img/fixed/delray.jpg');
+    /* background-image: url('../img/fixed/delray.jpg'); */
   }
   .fixed-light {
-    background-image: url('../img/fixed/clay-court.jpg');
+    /* background-image: url('../img/fixed/clay-court.jpg'); */
   }
   .footer {
     background: url('../img/footer/footer-mobile.jpg') no-repeat;
