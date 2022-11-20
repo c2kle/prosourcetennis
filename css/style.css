@@ -156,6 +156,17 @@ a.down-arrow .svg-inline--fa:hover {
 
 /*============= FEATURES SECTION =============*/
 
+/* My additions */
+
+p.leader {
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: 300;
+  hyphens: auto;
+}
+
+/**/
+
 .btn-sm {
   border-width: medium;
   border-radius: 0;
@@ -324,11 +335,12 @@ h3.heading {
 }
 ul.social {
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
   font-size: 1.5rem;
-  max-width: 8rem;
+  /* max-width: 8rem; */
 }
 ul.social li {
   display: inline;
