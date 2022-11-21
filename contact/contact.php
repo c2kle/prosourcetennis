@@ -31,7 +31,7 @@ $fields = array('name' => 'Name:', 'email' => 'Email:', 'message' => 'Message:')
 $okMessage = 'Successfully submitted - we will get back to you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'There was an error while submitting the form. Please try again later or send us a text';
 
 /*
 *  LET'S DO THE SENDING
@@ -44,7 +44,7 @@ try
 {
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-    $emailTextHtml .= "<h3>New message from the w3newbie Theme:</h3><hr>";
+    $emailTextHtml .= "<h3>New message from Pro Source Tennis Contact Forme:</h3><hr>";
     $emailTextHtml .= "<table>";
 
     foreach ($_POST as $key => $value) {
@@ -54,7 +54,7 @@ try
         }
     }
     $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a great day!<br><br>Sincerely,<br><br>w3newbie Theme</p>";
+    $emailTextHtml .= "<p>Have a great day!<br><br>Sincerely,<br><br>Big Boss</p>";
     
     $mail = new PHPMailer;
 
