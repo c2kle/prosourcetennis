@@ -29,6 +29,14 @@ html, body {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .mobile-justify {
+    hyphens: auto;
+    text-align: justify;
+  }
+}
+
+
 /*-- Turquoise Theme Color Text --*/
 .text-nuno {
   color: #1EBBA3;
