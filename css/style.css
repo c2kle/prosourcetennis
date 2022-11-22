@@ -29,7 +29,7 @@ html, body {
   padding-left: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .mobile-justify {
     hyphens: auto;
     text-align: justify;
