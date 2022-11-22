@@ -590,7 +590,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /*--- OPTION: TURN OFF ANIMATION ON MOBILE --*
 
 /**/
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
 .animated, .os-animation {
   -webkit-animation: none!important;
   -moz-animation: none!important;
@@ -601,7 +601,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   -moz-animation-delay: none !important;
   animation-delay: none !important;
   }
-} */
+}
 
 
 /*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
