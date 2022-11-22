@@ -11,6 +11,22 @@ html, body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #505962;
+  user-select: none;
+}
+
+
+.align-justify {
+  hyphens: auto;
+  text-align: justify;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.custom-pad {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /*-- Turquoise Theme Color Text --*/
