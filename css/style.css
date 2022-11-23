@@ -31,8 +31,8 @@ html, body {
 
 @media (max-width: 768px) {
   .mobile-justify {
-    hyphens: auto;
-    text-align: justify;
+    hyphens: auto!important;
+    text-align: justify!important;
   }
 }
 
